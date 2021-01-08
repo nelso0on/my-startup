@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#wrapper {
+  height: 100vh;
+  font-family: "poppins";
+}
+
+nav {
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  font-size: 24px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+.menu-item {
+  padding: 0 30px;
+  font-weight: 400px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.logo {
+  width: 200px;
+}
+
+.contact-button {
+  width: 200px;
+  height: 50px;
+  background: #6633ff;
+  border-radius: 15px;
+  border: none;
+  color: white;
+  font-size: 22px;
+  letter-spacing: 2px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: "Poppins";
+}
+
+.contact-button:hover {
+  background-color: #5926f0;
+}
+
+.menu-item::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  background-color: #6633ff;
+  border-radius: 1.5px;
+  transition: 0.3s ease;
+}
+
+.menu-item.active::after {
+  width: 100%;
+}
+
+.menu-item:hover::after {
+  width: 100%;
+}
+
+.menu-item.active {
+  font-weight: 500;
+}
+
+main {
+  height: 75%;
+  display: flex;
+  align-items: center;
+  padding: 0 200px;
+  justify-content: space-around;
+}
+
+.main-text {
+  font-size: 64px;
+  margin-bottom: 35px;
+}
+
+.violet {
+  color: #6633ff;
+  transition: 0.5s linear;
+}
+
+.violet:hover {
+  color: #5022da;
+}
+
+.img-container img {
+  height: 75vh;
+}
+
+.get-started-button {
+  width: 250px;
+  height: 80px;
+  border: none;
+  background: #6633ff;
+  border-radius: 15px;
+  color: white;
+  font-size: 32px;
+  font-family: "Poppins";
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.get-started-button:hover {
+  background-color: #5926f0;
+}
+
+footer {
+  height: 15%;
+  position: relative;
+}
+
+svg {
+  height: 100%;
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+@media (max-width: 874px) {
+  .img-container img {
+    height: 50vh;
+  }
+  .get-started-button {
+    width: 200px;
+    height: 80px;
+    font-size: 26px;
+  }
+  .main-text {
+    font-size: 48px;
+  }
+}
